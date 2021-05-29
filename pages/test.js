@@ -1,4 +1,4 @@
-import ShopItemList from '../components/category/ShopConteiner'
+import ShopItemList from '../components/category/ShopContainer'
 
 export async function getServerSideProps() {
     const response = await fetch('https://dry-wave-60207.herokuapp.com/api/shop/hats')

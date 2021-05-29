@@ -1,4 +1,4 @@
-import ShopConteiner from '../../components/category/ShopConteiner'
+import ShopContainer from '../../components/category/ShopContainer'
 
 export async function getServerSideProps() {
 
@@ -15,7 +15,7 @@ export async function getServerSideProps() {
 export default function MensPage({ items }) {
   return (
     <div>
-      <ShopConteiner categories= {items} title={'Mens'}/>
+      <ShopContainer categories= {items} title={'Mens'}/>
     </div>
 
   )

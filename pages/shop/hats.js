@@ -1,4 +1,4 @@
-import ShopConteiner from '../../components/category/ShopConteiner'
+import ShopContainer from '../../components/category/ShopContainer'
 
 export async function getServerSideProps() {
 
@@ -15,7 +15,7 @@ export async function getServerSideProps() {
 export default function HatsPage({ items }) {
   return (
     <div>
-      <ShopConteiner categories= {items} title={'Hats'}/>
+      <ShopContainer categories= {items} title={'Hats'}/>
     </div>
 
   )
