@@ -1,0 +1,16 @@
+.shop_container{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .item_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+    max-width: 80rem;
+  }
+
+
+}
