@@ -124,41 +124,12 @@ $animation-curve: cubic-bezier(1, 0, 0, 1);
                     width: 80%;
                 }
     
-                // 滑鼠移過顯示下拉式選單
+                滑鼠移過顯示下拉式選單
                 &:hover ul, &:focus ul {
                     opacity: 1;
                     visibility: visible;
                 }
                 
-                &Drop {
-                    position: absolute;
-                    top: 4rem;
-                    left: -1rem;
-                    box-shadow: 0 0 10px $clr-gray300;
-                    background-color: white;
-                    border-radius: $radius;
-                    width: 18rem;
-                    padding: 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 0.5rem;
-                    // 隱藏下拉式選單
-                    opacity: 0;
-                    visibility: hidden; 
-                    transition: opacity 300ms $animation-curve;
-    
-                    li {
-                        list-style: none;
-                        padding: 0.5rem 1rem;
-                        border-radius: $radius;
-                        transition: background-color 300ms $animation-curve;
-                        font-weight: 600;
-    
-                        &:hover, &:focus {
-                            background-color: $clr-primary-hover;
-                        }
-                    }
-                }
             }
         }
     }
