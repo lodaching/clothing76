@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './nav.module.scss'
 import {Dropdown} from 'react-bootstrap'
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Nav() {
   return (
@@ -25,7 +25,7 @@ export default function Nav() {
             </li>
 
             <li className={styles.nav__listItem}>
-              <Dropdown className={styles.nav__listItemDrop}>
+              <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Category
                 </Dropdown.Toggle>
