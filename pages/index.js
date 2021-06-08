@@ -1,7 +1,7 @@
 import MenuContainer from '../components/home/MenuContainer'
 
 export async function getServerSideProps() {
-  const response = await fetch('https://dry-wave-60207.herokuapp.com/api/categories')
+  const response = await fetch('https://dachingapi.herokuapp.com/Categories')
   const categories = await response.json()
 
   return {
@@ -14,7 +14,7 @@ export async function getServerSideProps() {
 export default function Home({ categories }) {
   return (
 
-      <MenuContainer key={categories[0].cid} categories={categories} />
+    <MenuContainer key={categories[0].cid} categories={categories} />
 
   )
 }
